@@ -1,0 +1,80 @@
+﻿{% extends "app/layout.html" %}
+{% load static %}
+{% block content %}
+
+
+
+<div id="solution" class="container">
+  <div class="row">
+      <form method="post">
+      <div class="col-md-6">
+          <h2 style="margin-bottom: 5%">Podaż: </h2>
+     <table class="table">
+    <tbody>
+        <tr>
+                           {% csrf_token %}
+               <center>{{dostawcy.as_table}}</center>    
+        </tr>
+    </tbody>
+</table>
+
+     </ul>
+       </div>
+     
+      <div class="col-md-6">
+          <h2 style="margin-bottom: 5%">Popyt:</h2>
+
+     <table class="table"">
+    <tbody>
+        <tr>
+                           {% csrf_token %}
+               <center>{{odbiorcy.as_table}}</center>    
+        </tr>
+    </tbody>
+</table>
+
+
+       </div>
+ </div>
+ <div>
+     <h2 >Koszta:</h2>
+<table class="table" style="text-align: center;">
+    <tbody>
+        <tr>
+        <td></td>
+            <th>Odbiorca 1</th>
+            <th>Odbiorca 2</th>
+            <th>Odbiorca 3</th>
+        </tr>
+        <tr>
+            <th>Dostawca 1</th>
+            <td>{{koszty.d1o1}}</td>
+            <td>{{koszty.d1o2}}</td>
+            <td>{{koszty.d1o3}}</td>
+        </tr>
+        <tr>
+            <th>Dostawca 2</th>
+            <td>{{koszty.d2o1}}</td>
+            <td>{{koszty.d2o2}}</td>
+            <td>{{koszty.d2o3}}</td>
+        </tr>
+        <tr>
+            <th>Dostawca 3</th>
+            <td>{{koszty.d3o1}}</td>
+            <td>{{koszty.d3o2}}</td>
+            <td>{{koszty.d3o3}}</td>
+        </tr>
+    </tbody>
+</table>
+               <p><center><input type="submit" class="btn btn-danger" value="OBLICZ ROZWIĄZANIE" /></center></p>
+       </form>
+          
+    </div>
+  </div>
+    </div>
+
+
+
+
+
+{% endblock %}

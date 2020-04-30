@@ -1,0 +1,19 @@
+﻿{% extends "app/layout.html" %}
+{% load static %}
+{% block content %}
+
+<div class="jumbotron">
+    <center><h1>Badania Operacyjne i Logistyka</h1></center>
+    <center><p class="lead">Zagadnienie transportowe - Kamil K, Piotr D</p></center>
+
+</div>
+
+
+<form>
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="Submit" />
+</form>
+
+
+{% endblock %}

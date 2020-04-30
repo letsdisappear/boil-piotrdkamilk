@@ -1,0 +1,1 @@
+web: gunicorn BOiL_Django2.wsgi

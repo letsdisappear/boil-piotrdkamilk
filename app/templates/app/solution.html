@@ -1,0 +1,43 @@
+﻿{% extends "app/layout.html" %}
+{% load static %}
+{% block content %}
+
+ <h2>Optymalny koszt: {{finalCost}}</h2>
+<h3> Rozwiązanie zagadnienia: </h3>
+
+<table class="table" style="margin-bottom: 10%">
+    <tbody>
+        <tr>
+        <td></td>
+            <th>Odbiorca 1</th>
+            <th>Odbiorca 2</th>
+            <th>Odbiorca 3</th>
+        </tr>
+        <tr>
+            <th>Dostawca 1</th>
+            <td>{{d1o1_result}}</td>
+            <td>{{d1o2_result}}</td>
+            <td>{{d1o3_result}}</td>
+        </tr>
+        <tr>
+        <th>Dostawca 2</th>
+            <td>{{d2o1_result}}</td>
+            <td>{{d2o2_result}}</td>
+            <td>{{d2o3_result}}</td>
+        </tr>
+        <tr>
+            <th>Dostawca 3</th>
+            <td>{{d3o1_result}}</td>
+            <td>{{d3o2_result}}</td>
+            <td>{{d3o3_result}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+{% endblock %}
+

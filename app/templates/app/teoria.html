@@ -1,0 +1,36 @@
+﻿{% extends "app/layout.html" %}
+{% load static %}
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+
+
+<h2>1. Opis zagadnienia</h2>
+<h3>1.1. PODSTAWOWE INFORMACJE</h3>
+<p>Zagadnienie transportowe to jedno ze specjalnych typów problemu liniowego. Celem
+owego zagadnienia jest minimalizacja kosztów transportu danych dóbr/towaru z miejsca
+źródłowego (magazyn, fabryka) do docelowej destynacji (na przykład centrów
+dystrybucji). Każdy z dostawców posiada limitowaną liczbę dóbr wyrażoną w danych
+jednostkach określaną także jako podażą danego dostawcy. Z drugiej strony odbiorcy
+mają przedstawioną swoją podaż, czyli to, ile jednostek danego towaru dany odbiorca
+potrzebuję mieć dostarczone przez dostawcę.
+Dodatkowo jako dane wejściowe problemu określa się także koszt dostawy, który jest
+wyliczany dla jednej jednostki towaru -dla przykładu przewiezienie jednej tony stopu
+metalu z miejsca A do miejsca B kosztuję 10 zł, a z miejsca A do miejsca C 15zł.
+Odzwierciedla to koszty przewozu jak i całej logistyki związanej z daną przesyłką.</p>
+<p>Schemat problemu przedstawiony jest poniżej:</p>
+<center><img src={% static 'app/content/graph1.png' %} width="60%" height="auto" /></center>
+<p>Gdzie:<br />
+    •	a1, a2., am to dostawcy<br />
+    •	b1, b2, bn to odbiorcy towaru<br />
+
+<h3>1.2. Typy zagadnień transportowych</h3>
+    <center><img src={% static 'app/content/graph2.PNG' %} width="60%" height="auto" /></center>
+<h2>2. Wykorzystane narzędzia</h2>
+<p> Do wykonania projektu użyłem języka Python wraz z modułem Django -do obsługi aplikacji webowej, oraz modułu PuLPy w celach przeprowadzenia optymalizacji zagadnienia.</p>
+<p> Przykładowe rozwiązanie znajduje się na stornie głównej</p>
+
+
+{% endblock %}
