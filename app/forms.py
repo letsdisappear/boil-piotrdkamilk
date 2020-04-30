@@ -1,14 +1,14 @@
 from django import forms
 
 class Dostawcy(forms.Form):
-    deliver1 = forms.IntegerField(label='Wpisz podaż dostawcy 1 ', initial="50")
-    deliver2 = forms.IntegerField(label='Wpisz podaż dostawcy 2 ', initial="70")
-    deliver3 = forms.IntegerField(label='Wpisz podaż dostawcy 3 ', initial="30")
+    deliver1 = forms.IntegerField(label='Dostawca 1', initial="50")
+    deliver2 = forms.IntegerField(label='Dostawca 2 ', initial="70")
+    deliver3 = forms.IntegerField(label='Dostawca 3 ', initial="30")
 
 class Odbiorcy(forms.Form):
-    receiver1 = forms.IntegerField(label='Wpisz popyt odbiorcy 1 ', initial="20")
-    receiver2 = forms.IntegerField(label='Wpisz popyt odbiorcy 2 ', initial="40")
-    receiver3 = forms.IntegerField(label='Wpisz popyt odbiorcy 3 ', initial="90")
+    receiver1 = forms.IntegerField(label='Odbiorca 1 ', initial="20")
+    receiver2 = forms.IntegerField(label='Odbiorca 2 ', initial="40")
+    receiver3 = forms.IntegerField(label='Odbiorca 3', initial="90")
 
 class Koszty(forms.Form):
     d1o1 = forms.CharField(label='D1 > O1', initial="3")
