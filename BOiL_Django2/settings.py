@@ -25,7 +25,7 @@ SECRET_KEY = 'fce84fb2-48ee-4aac-9e61-b2fd4767a11c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['boil-mmirzyns.herokuapp.com']
+ALLOWED_HOSTS = ['boil-piotrdkamilk.herokuapp.com']
 
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
